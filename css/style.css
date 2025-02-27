@@ -223,8 +223,26 @@ main {
   min-height: 100%;
   background-color: #f5f5fc;
   border-radius: 88px;
+  padding: 29px 0px 0px 42px;
 }
-
+.content-center__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.item-content-button {
+  padding: 15px 24px 15px 24px;
+  border-radius: 64px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  -webkit-box-shadow: 0 4px 100px 0 rgba(218, 220, 245, 0.3);
+          box-shadow: 0 4px 100px 0 rgba(218, 220, 245, 0.3);
+  background: #fff;
+}
 .right {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 23.428%;
