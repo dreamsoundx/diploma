@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Outfit:500&display=swap&subset=cyrillic-ext ");
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  color: #000000;
+  line-height: 1;
+  background: #ffffff;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+main {
+  padding: 8px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px -4px;
+}
+
+.left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 10.857%;
+          flex: 0 1 10.857%;
+  padding: 0px 4px;
+}
+.content-left__top {
+  padding: 42px 0px 10.25px 0px;
+  background-color: #f5f5fc;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 88px;
+}
+.content-left__header {
+  padding: 0px 40px 0px 40px;
+}
+.content-left__header:not(:last-child) {
+  margin-bottom: 70px;
+}
+.content-left__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content-left__logo {
+  max-width: 100%;
+  max-height: 100px;
+}
+.content-left__menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.content-left__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 8px 0px 8px;
+}
+.content-left__profile {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 128px;
+          flex: 0 0 128px;
+  width: 128px;
+  border: 24px solid #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content-left__img {
+  max-height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  padding-left: 41.66%;
+}
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+}
+.menu__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu__item::after {
+  background-color: #d53831;
+  content: "";
+  width: 4px;
+  height: 28px;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.menu__item:active::after {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.menu__link:hover svg path {
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  fill: #d53831;
+}
+.center {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0px 4px;
+}
+
+.content-center {
+  background-color: #f5f5fc;
+  height: 100vh;
+  border-radius: 88px;
+}
+
+.right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 23.428%;
+          flex: 0 1 23.428%;
+  padding: 0px 4px;
+}
+
+.content-right {
+  background-color: #f5f5fc;
+  height: 100vh;
+  border-radius: 88px;
+}
