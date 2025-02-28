@@ -2,7 +2,7 @@
 &display=swap
 &subset=cyrillic-ext 
 */
-@import url("https://fonts.googleapis.com/css?family=Outfit:500&display=swap&subset=cyrillic-ext ");
+@import url("https://fonts.googleapis.com/css?family=Inter:500&display=swap&subset=cyrillic-ext");
 @import "_null";
 
 html {
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #000000;
   line-height: 1;
   background: #ffffff;
@@ -19,6 +19,7 @@ body {
 .wrapper {
   height: 100vh;
   overflow: hidden;
+  font-weight: 500;
 }
 
 [class*="__container"] {
@@ -140,7 +141,7 @@ main {
       width: 4px;
       height: 28px;
       transform: scale(0);
-      transition: all 0.2s ease;
+      transition: all 0.5s ease;
     }
     &:active {
       &::after {
@@ -188,39 +189,68 @@ main {
   background-color: #f5f5fc;
 
   border-radius: 88px;
-  padding: 29px 0px 0px 42px;
+  // padding: 29px 42px 0px 42px;
 
   // .content-center__items
 
   &__items {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 
   // .content-center__item
 
   &__item {
+    padding: 22px 0px 22px 60px;
+    display: flex;
+    &_menu {
+      padding: 22px 7% 22px 60px;
+      // border-radius: 100px 100px 200px 100px;
+    }
+    &_gpt {
+      padding: 22px 0px 22px 7%;
+
+      border-radius: 0px 0px 0px 64px;
+      flex: 1 1 auto;
+      // padding: 42px;
+      background-color: #ffffff;
+    }
   }
 }
 
 .item-content-center {
+  flex: 1 1 auto;
 }
 .item-content-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
   padding: 15px 24px 15px 24px;
   border-radius: 64px;
   font-weight: 500;
   font-size: 16px;
   color: #000;
   box-shadow: 0 4px 100px 0 rgba(218, 220, 245, 0.3);
-  background: #fff;
+  background-color: #fff;
+  text-align: center;
+
+  &:hover {
+    transition: all 0.5s ease;
+    background-color: #a6a6e4;
+  }
   // .item-content-button_menu
 
   &_menu {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 6.5px;
   }
 
   // .item-content-button_gpt
 
   &_gpt {
+    background-color: #f5f5fc;
   }
 }
 
