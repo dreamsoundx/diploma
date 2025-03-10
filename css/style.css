@@ -4,6 +4,8 @@
 &subset=cyrillic-ext 
 */
 @import url("https://fonts.googleapis.com/css?family=Inter:500&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Rubic:400,500&display=swap&subset=cyrillic-ext");
 /* ОБНУЛЕНИЕ СТИЛЕЙ */
 *,
 *::before,
@@ -52,7 +54,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Rubic", sans-serif;
   color: #000000;
   line-height: 1;
   background: #ffffff;
@@ -308,10 +310,87 @@ main {
       -ms-flex: 0 1 23.428%;
           flex: 0 1 23.428%;
   padding: 0px 4px;
+  background-color: #fff;
 }
 
 .content-right {
   min-height: 100%;
-  background-color: #f5f5fc;
   border-radius: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 8px;
+}
+.content-right__top {
+  border-radius: 88px;
+  padding: 8px 8px 8px 8px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background-color: #f5f5fc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.content-right__bottom {
+  border-radius: 88px;
+  padding: 8px 8px 8px 8px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 29.882vh;
+          flex: 0 1 29.882vh;
+  background-color: #f5f5fc;
+}
+
+.top-content-right {
+  background-color: #ffffff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  border-radius: 88px;
+}
+.bottom-content-right {
+  border-radius: 88px;
+  background-color: #ffffff;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.bottom-content-right__status {
+  padding: 38px 15.4% 38px 15.4%;
+}
+.bottom-content-right__text {
+  font-weight: 500;
+  font-size: 24px;
+  color: #8a8aaa;
+}
+.bottom-content-right__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+.bottom-content-right__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.bottom-content-right__number {
+  font-weight: 500;
+  font-size: 48px;
+  color: #000000;
+}
+.bottom-content-right__label {
+  color: #8a8aab;
 }
