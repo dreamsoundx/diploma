@@ -260,7 +260,7 @@ main {
           flex: 1 1 auto;
 }
 
-.item-content-button {
+.center-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,12 +283,12 @@ main {
   background-color: #fff;
   text-align: center;
 }
-.item-content-button:hover {
+.center-button:hover {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background-color: #a6a6e4;
 }
-.item-content-button_menu {
+.center-button_menu {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -299,7 +299,7 @@ main {
      -moz-column-gap: 6.5px;
           column-gap: 6.5px;
 }
-.item-content-button_gpt {
+.center-button_gpt {
   background-color: #f5f5fc;
 }
 
