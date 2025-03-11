@@ -28,12 +28,40 @@ body {
   // padding: 0px 8px;
 }
 
-main {
-  min-height: 100%;
+.app {
+  height: 100%;
   padding: 8px;
-  // height: 100vh;
-  display: flex;
-  margin: 0px -4px;
+  height: 100%;
+
+  // .app__items
+
+  &__items {
+    height: 100%;
+    display: flex;
+    margin: 0px -4px;
+  }
+
+  // .app__left
+
+  &__left {
+    flex: 0 1 10.857%;
+    padding: 0px 4px;
+  }
+
+  // .app__center
+
+  &__center {
+    flex: 1 1 auto;
+    padding: 0px 4px;
+  }
+
+  // .app__right
+
+  &__right {
+    flex: 0 1 23.428%;
+    padding: 0px 4px;
+    background-color: #fff;
+  }
 }
 
 .left {
