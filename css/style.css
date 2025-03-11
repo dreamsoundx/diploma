@@ -60,16 +60,11 @@ body {
   background: #ffffff;
 }
 
-.wrapper {
+.app {
   height: 100vh;
   overflow: hidden;
   font-weight: 500;
-}
-
-.app {
-  height: 100%;
   padding: 8px;
-  height: 100%;
 }
 .app__items {
   height: 100%;

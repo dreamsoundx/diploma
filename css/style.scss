@@ -18,21 +18,22 @@ body {
   background: #ffffff;
 }
 
-.wrapper {
-  height: 100vh;
-  overflow: hidden;
-  font-weight: 500;
-}
-
 [class*="__container"] {
   // padding: 0px 8px;
 }
 
-.app {
-  height: 100%;
-  padding: 8px;
-  height: 100%;
+// .app {
+//   height: 100vh;
+//   overflow: hidden;
+//   font-weight: 500;
+//   padding: 8px;
+// }
 
+.app {
+  height: 100vh;
+  overflow: hidden;
+  font-weight: 500;
+  padding: 8px;
   // .app__items
 
   &__items {
