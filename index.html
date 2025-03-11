@@ -9,22 +9,17 @@
   </head>
 
   <body>
-    <!-- <div class="wrapper"> -->
     <div class="app">
       <div class="app__items">
         <div class="app__left">
-          <div class="content-left">
-            <div class="content-left__top">
-              <div class="content-left__header">
-                <a class="content-left__image" href="#">
-                  <img
-                    class="content-left__logo"
-                    src="assets/logo.png"
-                    alt="logo"
-                  />
+          <div class="sidebar">
+            <div class="sidebar__top">
+              <div class="sidebar__header">
+                <a class="sidebar__image" href="#">
+                  <img class="sidebar__logo" src="assets/logo.png" alt="logo" />
                 </a>
               </div>
-              <nav class="content-left__menu menu">
+              <nav class="sidebar__menu menu">
                 <ul class="menu__list">
                   <li class="menu__item">
                     <a class="menu__link menu__link_home" href="#">
@@ -96,10 +91,10 @@
                   </li>
                 </ul>
               </nav>
-              <div class="content-left__footer">
-                <div class="content-left__profile">
+              <div class="sidebar__footer">
+                <div class="sidebar__profile">
                   <img
-                    class="content-left__img"
+                    class="sidebar__img"
                     src="assets/profile.png"
                     alt="profile"
                   />
@@ -109,23 +104,22 @@
           </div>
         </div>
         <div class="app__center">
-          <div class="content-center">
-            <div class="content-center__items">
-              <div class="content-center__item content-center__item_menu">
-                <a class="center-button center-button_menu" href="#"
+          <div class="home">
+            <div class="home__row">
+              <div class="home__item home__item_menu">
+                <a class="home__button home__button_menu" href="#"
                   ><img
-                    class="item-content-button__icon"
+                    class="home__icon"
                     src="assets/arrow.svg"
                     alt="arrow"
                   />На Главную</a
                 >
               </div>
-              <div class="content-center__item content-center__item_gpt">
-                <a class="center-button center-button_gpt" href="#"
-                  >Ассистент
-                </a>
+              <div class="home__item home__item_gpt">
+                <a class="home__button home__button_gpt" href="#">Ассистент </a>
               </div>
             </div>
+            <div class="home__body"></div>
           </div>
         </div>
         <div class="app__right">
@@ -190,6 +184,5 @@
         </div>
       </div>
     </div>
-    <!-- /div>< -->
   </body>
 </html>
