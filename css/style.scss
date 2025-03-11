@@ -4,7 +4,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Inter:500&display=swap&subset=cyrillic-ext");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap&subset=cyrillic-ext");
-@import url("https://fonts.googleapis.com/css?family=Rubic:400,500&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Rubic:400,500,600,700&display=swap&subset=cyrillic-ext");
 @import "_null";
 
 html {
@@ -289,10 +289,11 @@ main {
 }
 
 .top-content-right {
-  background-color: #ffffff;
   flex: 1 1 auto;
   border-radius: 88px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
   // .top-content-right__data
 
@@ -300,7 +301,77 @@ main {
     display: flex;
     background-color: #f5f5fc;
   }
+
+  // .top-content-right__body
+
+  &__body {
+    border-radius: 60px 0px 0px 0px;
+    padding: 24px 24px 24px 24px;
+    background-color: #ffffff;
+    flex: 1 1 auto;
+  }
+
+  // .top-content-right__buttons
+
+  &__buttons {
+    display: flex;
+    column-gap: 8px;
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
+  }
+
+  // .top-content-right__button
+
+  &__button {
+    all: unset;
+    cursor: pointer;
+    flex: 1 1 auto;
+    min-height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+    border: 1px solid #aab0e1;
+    border-radius: 123px;
+    text-align: center;
+    &:hover {
+      transition: all 0.5s ease;
+      background-color: #a6a6e4;
+    }
+    // .top-content-right__button_right
+
+    &_right {
+    }
+
+    // .top-content-right__button_middle
+
+    &_middle {
+      background-color: #11101a;
+      color: #ffffff;
+    }
+
+    // .top-content-right__button_left
+
+    &_left {
+    }
+  }
+
+  // .top-content-right__items
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 21px;
+  }
+
+  // .top-content-right__item
+
+  &__item {
+  }
 }
+
 .data {
   font-weight: 500;
   font-size: 24px;
@@ -332,6 +403,22 @@ main {
     justify-content: center;
     align-items: center;
     padding: 25px 36px 25px 36px;
+  }
+}
+
+.work {
+  background: #f5f5fc;
+  border-radius: 123px;
+  padding: 33px 24px 33px 24px;
+  line-height: 120%;
+  // .work__subject
+
+  &__subject {
+  }
+
+  // .work__name
+
+  &__name {
   }
 }
 
