@@ -369,8 +369,8 @@ body {
   text-align: center;
 }
 .home__button:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   background-color: #9bc6f8;
   color: #ffffff;
 }
@@ -395,8 +395,8 @@ body {
   background: url("../assets/arrow.svg") 0 0 no-repeat;
 }
 .home__button_menu:hover::before {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   background: url("../assets/arrow2.svg") 0 0 no-repeat;
 }
 .home__button_gpt {
