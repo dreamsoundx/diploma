@@ -529,7 +529,7 @@ body {
 .bottom-aside {
   height: 100%;
   border-radius: 88px;
-  padding: 24px 0px 24px 24px;
+  padding: 24px 0px 24px 48px;
   background-color: #ffffff;
   border: 8px solid #f5f5fc;
   border-radius: 88px;
@@ -586,6 +586,6 @@ body {
   // .bottom-aside__img
 
   &__img {
-    max-width: 90%;
+    max-width: 75%;
   }
 }
