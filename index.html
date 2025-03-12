@@ -22,8 +22,9 @@
               <nav class="sidebar__menu menu">
                 <ul class="menu__list">
                   <li class="menu__item">
-                    <a class="menu__link menu__link_home" href="#">
+                    <a class="menu__link link link_home" href="#">
                       <svg
+                        class="link__icon"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -35,11 +36,13 @@
                           fill="#8A8AAB"
                         />
                       </svg>
+                      <p class="link__text">Главная</p>
                     </a>
                   </li>
                   <li class="menu__item">
-                    <a class="menu__link menu__link_magic-star" href="#">
+                    <a class="menu__link link link_magic-star" href="#">
                       <svg
+                        class="link__icon"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -51,11 +54,13 @@
                           fill="#8A8AAB"
                         />
                       </svg>
-                    </a>
+                      <p class="link__text">Посещаемость</p></a
+                    >
                   </li>
                   <li class="menu__item">
-                    <a class="menu__link menu__link_location" href="#">
+                    <a class="menu__link link link_location" href="#">
                       <svg
+                        class="link__icon"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -67,11 +72,13 @@
                           fill="#8A8AAB"
                         />
                       </svg>
+                      <p class="link__text">Мои группы</p>
                     </a>
                   </li>
                   <li class="menu__item">
-                    <a class="menu__link menu__link_briefcase" href="#">
+                    <a class="menu__link link link_briefcase" href="#">
                       <svg
+                        class="link__icon"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -87,6 +94,7 @@
                           fill="#8A8AAB"
                         />
                       </svg>
+                      <p class="link__text">Мои предметы</p>
                     </a>
                   </li>
                 </ul>
@@ -107,16 +115,12 @@
           <div class="home">
             <div class="home__row">
               <div class="home__item home__item_menu">
-                <a class="home__button home__button_menu" href="#"
-                  ><img
-                    class="home__icon"
-                    src="assets/arrow.svg"
-                    alt="arrow"
-                  />На Главную</a
-                >
+                <button class="home__button home__button_menu">
+                  На Главную
+                </button>
               </div>
               <div class="home__item home__item_gpt">
-                <a class="home__button home__button_gpt" href="#">Ассистент </a>
+                <button class="home__button home__button_gpt">Ассистент</button>
               </div>
             </div>
             <div class="home__body"></div>

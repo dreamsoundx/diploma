@@ -61,7 +61,7 @@ body {
 .app {
   height: 100vh;
   overflow: hidden;
-  font-weight: 500;
+  font-weight: 600;
   padding: 8px;
 }
 .app__items {
@@ -184,11 +184,6 @@ body {
   border-radius: 50%;
 }
 
-.menu {
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
-  padding-left: 44.545%;
-}
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,40 +195,63 @@ body {
   row-gap: 40px;
 }
 .menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.link {
+  color: #000;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
 }
-.menu__item::after {
-  background-color: #d53831;
-  content: "";
-  width: 4px;
-  height: 28px;
-  border-radius: 24px;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.menu__item:active::after {
+.link:hover .link__text {
+  color: #d53831;
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
+  position: relative;
+  width: auto;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
 }
-.menu__link:hover {
+.link:hover {
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
-.menu__link:hover svg path {
+.link:hover svg path {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   fill: #d53831;
 }
+.link__icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 24px;
+          flex: 0 0 24px;
+  position: relative;
+  height: 24px;
+  min-width: 24px;
+}
+.link__text {
+  position: absolute;
+  width: 10.461vw;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+
 .home {
   height: 100%;
   background-color: #f5f5fc;
@@ -300,6 +318,8 @@ body {
   background-color: #ffffff;
 }
 .home__button {
+  all: unset;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,7 +334,7 @@ body {
           flex: 1 1 auto;
   padding: 15px 24px 15px 24px;
   border-radius: 64px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   color: #000;
   -webkit-box-shadow: 0 4px 100px 0 rgba(218, 220, 245, 0.3);
@@ -325,7 +345,8 @@ body {
 .home__button:hover {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background-color: #a6a6e4;
+  background-color: #9bc6f8;
+  color: #ffffff;
 }
 .home__button_menu {
   display: -webkit-inline-box;
@@ -337,6 +358,20 @@ body {
   -webkit-column-gap: 6.5px;
      -moz-column-gap: 6.5px;
           column-gap: 6.5px;
+}
+.home__button_menu::before {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 24px;
+          flex: 0 0 24px;
+  min-width: 24px;
+  height: 24px;
+  content: "";
+  background: url("../assets/arrow.svg") 0 0 no-repeat;
+}
+.home__button_menu:hover::before {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: url("../assets/arrow2.svg") 0 0 no-repeat;
 }
 .home__button_gpt {
   background-color: #f5f5fc;
@@ -444,7 +479,8 @@ body {
 .top-aside__button:hover {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background-color: #a6a6e4;
+  background-color: #9bc6f8;
+  border: 1px solid #9bc6f8;
 }
 .top-aside__button_middle {
   background-color: #11101a;
@@ -503,10 +539,14 @@ body {
 }
 
 .work {
+  font-weight: 500;
   background: #f5f5fc;
-  border-radius: 123px;
+  border-radius: 40px;
   padding: 33px 24px 33px 24px;
   line-height: 120%;
+}
+.work__subject {
+  font-weight: 600;
 }
 .bottom-aside {
   height: 100%;
