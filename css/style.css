@@ -637,24 +637,37 @@ body {
 .bottom-aside {
   height: 100%;
   border-radius: 88px;
-  padding: 8px 8px 8px 8px;
+  padding: 24px 0px 24px 24px;
   background-color: #ffffff;
   border: 8px solid #f5f5fc;
   border-radius: 88px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .bottom-aside__status {
-  padding: 38px 15.4% 38px 15.4%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  min-width: 137px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .bottom-aside__text {
   font-weight: 500;
   font-size: 24px;
-  color: #8a8aaa;
+  color: rgba(36, 34, 34, 0.719);
 }
 .bottom-aside__text:not(:last-child) {
   margin-bottom: 20px;
@@ -666,6 +679,9 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
 }
 .bottom-aside__number {
   font-weight: 500;
@@ -674,4 +690,14 @@ body {
 }
 .bottom-aside__label {
   color: #8a8aab;
+  font-size: 18px;
+  font-weight: 600;
+}
+.bottom-aside__image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 53%;
+          flex: 1 1 53%;
+}
+.bottom-aside__img {
+  max-width: 100%;
 }
