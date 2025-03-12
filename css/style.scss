@@ -54,6 +54,7 @@ body {
     flex: 0 1 23.428%;
     padding: 0px 4px;
     background-color: #fff;
+    display: flex;
   }
 }
 
@@ -516,7 +517,7 @@ body {
 // }
 
 .aside {
-  height: 100%;
+  flex: 1 1 auto;
   border-radius: 88px;
   margin: -4px 0px;
   display: flex;
@@ -554,7 +555,7 @@ body {
   // .top-aside__body
 
   &__body {
-    // height: 100%;
+    flex: 1 1 auto;
     border-radius: 60px 0px 0px 0px;
     padding: 24px 24px 0px 24px;
     background-color: #ffffff;
