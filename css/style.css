@@ -653,21 +653,11 @@ body {
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
   min-width: 137px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .bottom-aside__text {
   font-weight: 500;
   font-size: 24px;
-  color: rgba(36, 34, 34, 0.719);
+  color: #8a8aaa;
 }
 .bottom-aside__text:not(:last-child) {
   margin-bottom: 20px;

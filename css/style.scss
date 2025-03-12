@@ -540,10 +540,6 @@ body {
   &__status {
     flex: 1 1 50%;
     min-width: 137px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // padding: 38px 15.4% 38px 15.4%;
   }
 
   // .bottom-aside__text
@@ -551,7 +547,7 @@ body {
   &__text {
     font-weight: 500;
     font-size: 24px;
-    color: rgba(36, 34, 34, 0.719);
+    color: #8a8aaa;
     &:not(:last-child) {
       margin-bottom: 20px;
     }
