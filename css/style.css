@@ -369,8 +369,8 @@ body {
   text-align: center;
 }
 .home__button:hover {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   background-color: #9bc6f8;
   color: #ffffff;
 }
@@ -395,8 +395,8 @@ body {
   background: url("../assets/arrow.svg") 0 0 no-repeat;
 }
 .home__button_menu:hover::before {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   background: url("../assets/arrow2.svg") 0 0 no-repeat;
 }
 .home__button_gpt {
@@ -489,6 +489,9 @@ body {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -503,13 +506,19 @@ body {
   text-align: center;
 }
 .top-aside__button:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   background-color: #9bc6f8;
   border: 1px solid #9bc6f8;
 }
+.top-aside__button_right:hover {
+  color: #ffffff;
+}
 .top-aside__button_middle {
   background-color: #11101a;
+  color: #ffffff;
+}
+.top-aside__button_left:hover {
   color: #ffffff;
 }
 .top-aside__items {
