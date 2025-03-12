@@ -501,9 +501,11 @@ body {
   font-size: 16px;
   color: #000;
   border-radius: 123px;
+  border: 1px solid #aab0e1;
   text-align: center;
 }
 .top-aside__button:hover {
+  border: 1px solid transparent;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: #b1d1f7;
@@ -539,6 +541,7 @@ body {
   background: url("../assets/direct-left2.svg") 0 0 no-repeat;
 }
 .top-aside__button_middle {
+  border: 1px solid transparent;
   background-color: #11101a;
   color: #ffffff;
 }
