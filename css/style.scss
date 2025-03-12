@@ -3,7 +3,7 @@
 &subset=cyrillic-ext 
 */
 
-@import url("https://fonts.googleapis.com/css?family=Rubic:400,500,600&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,600&display=swap&subset=cyrillic-ext");
 @import "_null";
 
 html {
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000000;
   line-height: 1;
   background: #ffffff;
@@ -23,7 +23,6 @@ body {
 .app {
   height: 100vh;
   overflow: hidden;
-  font-weight: 600;
   padding: 8px;
   // .app__items
 
@@ -280,15 +279,17 @@ body {
     padding: 15px 24px 15px 24px;
     border-radius: 64px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     color: #000;
     box-shadow: 0 4px 100px 0 rgba(218, 220, 245, 0.3);
     background-color: #fff;
     text-align: center;
+    border: 2px solid transparent;
     &:hover {
       transition: all 0.3s ease;
       background-color: #9bc6f8;
       color: #ffffff;
+      border: 2px solid #ffffff;
     }
 
     // .home__button_menu
@@ -398,7 +399,7 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
     color: #000;
     border: 1px solid #aab0e1;
     border-radius: 123px;
@@ -481,7 +482,6 @@ body {
   }
 }
 .work {
-  font-weight: 500;
   background: #f5f5fc;
   border-radius: 40px;
   padding: 33px 24px 33px 24px;
