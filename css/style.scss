@@ -158,7 +158,7 @@ body {
     transition: all 0.7s ease;
   }
   &__link:hover {
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.25));
   }
   &__link:hover &__icon path {
     transition: all 0.7s ease;
@@ -281,17 +281,13 @@ body {
     font-weight: 600;
     font-size: 18px;
     color: #000;
-    // box-shadow: 0 4px 100px 0 rgba(218, 220, 245, 0.3);
-
     background-color: #fff;
     text-align: center;
-    // border: 2px solid transparent;
     &:hover {
       transition: all 0.3s ease;
       background-color: #b1d1f7;
       color: #ffffff;
-      // border: 2px solid rgba(248, 248, 130, 0.938);
-      filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.363);
     }
 
     // .home__button_menu
@@ -409,7 +405,7 @@ body {
     &:hover {
       transition: all 0.3s ease;
       background-color: #b1d1f7;
-      filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
     }
     // .top-aside__button_left
 

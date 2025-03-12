@@ -219,8 +219,8 @@ body {
   transition: all 0.7s ease;
 }
 .menu__link:hover {
-  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.25));
 }
 .menu__link:hover .menu__icon path {
   -webkit-transition: all 0.7s ease;
@@ -370,8 +370,8 @@ body {
   transition: all 0.3s ease;
   background-color: #b1d1f7;
   color: #ffffff;
-  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.363);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.363);
 }
 .home__button_menu {
   display: -webkit-inline-box;
@@ -507,8 +507,8 @@ body {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: #b1d1f7;
-  -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
 }
 .top-aside__button_left {
   display: -webkit-box;
